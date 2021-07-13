@@ -17,8 +17,19 @@
 
 
 ## How To Use
+> Endpoints:
 ```bash
-$ curl https://
+# Get anime info:
+$ curl https://tsukiapi.herokuapp.com/anime/search?keyword={anime name}&type=anime
+
+# Get news preview:
+$ curl https://tsukiapi.herokuapp.com/anime/news
+
+# Get news details:
+$ curl https://tsukiapi.herokuapp.com/anime/news/details?id={anime_id}
+
+# Get seasonal animes
+$ curl https://tsukiapi.herokuapp.com/anime/season
 ```
 
 ## Download
@@ -28,10 +39,10 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/Tsukiapp/MAL-scrapper.git
+$ git clone https://github.com/Tsukiapp/Tsuki-API
 
 # Go into the repository
-$ cd MAL-scrapper
+$ cd Tsuki-API
 
 # Install dependencies
 $ npm install
@@ -49,10 +60,10 @@ $ npm run start
 
 This software uses the following open source packages:
 
-- [Axios](https://axios-http.com/)
+- [Express](http://expressjs.com/)
 - [Node.js](https://nodejs.org/)
-- [Cheerio](https://cheerio.js.org/)
 - [Typescript](https://www.typescriptlang.org/)
+- [Tsuki-mal-scrapper](https://github.com/Tsukiapp/MAL-scrapper)
 
 
 ## License
