@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { TsearchAnime } from "../types/searchAnime";
+import { TsearchAnime } from "../types/getAnime";
 // @ts-expect-error
 import { getAnimeInfo } from 'tsukiapp-mal-scrapper';
 
@@ -11,4 +11,4 @@ class getAnimeController {
   }
 }
 
-export const searchAnime = new getAnimeController();
+export const getAnime = new getAnimeController();
