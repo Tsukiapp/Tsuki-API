@@ -2,21 +2,26 @@
 
 <p align="center">
   <a href="#Features"> Features 🦾 </a> •
-  <a href="#how-to-use">How To Use ❔ </a> •
-  <a href="#download">Download 💻 </a> •
+  <a href="#how-to-use">How To Use 📖 </a> •
+  <a href="#Download">Download 💾 </a> •
 </p>
 
 
 
 ## Features🦾
 
-* Endpoints:  
-  - To request info about seasonal TOP 50 animes.
-  - The lastest news related to the anime world.
-  - To request info about a specific anime.
+### ✅ Endpoints:  
+
+   ✔️ To request info about seasonal TOP 50 animes.
+
+   ✔️ The lastest news related to the anime world.
+
+   ✔️ To request info about a specific anime.
+
+   ✔️ To request top animes.
 
 
-## How To Use
+## How To Use 📖
 > Endpoints:
 ```bash
 # Get anime info:
@@ -30,9 +35,12 @@ $ curl https://tsukiapi.herokuapp.com/anime/news/details?id={anime_id}
 
 # Get seasonal animes
 $ curl https://tsukiapi.herokuapp.com/anime/season
+
+# Get top animes
+$ curl https://tsukiapp.herokuapp.com/anime/top
 ```
 
-## Download
+## Download 💾
 
 
 To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
@@ -73,3 +81,4 @@ MIT
 ---
 
 > GitHub [@Tsukiapp](https://github.com/Tsukiapp) &nbsp;&middot;&nbsp;
+> GitHub [@alejandro0619](https://github.com/alejandro0619) &nbsp;&middot;&nbsp;

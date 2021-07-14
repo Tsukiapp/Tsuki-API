@@ -6,7 +6,7 @@ import { TgetSeasonalInfo } from '../types/getSeasonalInfo'
 class getSeasonalInfoController {
   public async getSeasonalInfo(req: Request, res: Response) {
     const response: TgetSeasonalInfo[] = await getSeasonalInfo();
-    return res.json(response)
+    return res.status(200).json(response)
   }
 }
 
