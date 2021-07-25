@@ -2,12 +2,14 @@
 import express from 'express';
 import router from './routes/routes.js';
 import { BASE_URL } from './lib/keys.js';
+import cors from 'cors';
 //initialize:
 const app = express();
 
 //setting:
 app.set('port', process.env.PORT || 5000);
-
+//cors:
+app.use(cors())
 //Routes:
 app.use(BASE_URL, router)
 //Middleware:
