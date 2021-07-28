@@ -1,12 +1,11 @@
 import { Request, Response } from 'express';
-//@ts-expect-error
-import { getSeasonalInfo } from 'tsukiapp-mal-scrapper';
-import { TgetSeasonalInfo } from '../types/getSeasonalInfo'
+import { SeasonalInfoType } from 'tsukiapp-mal-scrapper/dist/DTO/seasonal.dto';
+import { Anime } from '../lib/keys.js';
 
 class getSeasonalInfoController {
   public async getSeasonalInfo(req: Request, res: Response) {
-    const response: TgetSeasonalInfo[] = await getSeasonalInfo();
-    return res.status(200).json(response)
+    const response: SeasonalInfoType[] = await Anime.getSeasonalInfo();
+    return res.status(200).json(response);
   }
 }
 

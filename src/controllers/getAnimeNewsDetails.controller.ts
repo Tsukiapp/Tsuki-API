@@ -1,11 +1,11 @@
 import { Request, Response } from 'express';
-//@ts-expect-error
-import { getNewsDetails,getNewsPreview  } from 'tsukiapp-mal-scrapper';
-import { TgetNewsDetails } from '../types/getNewsDetails'
+import { Anime } from '../lib/keys.js';
+import { NewDetailsType } from 'tsukiapp-mal-scrapper/dist/DTO/news.dto'
 class getAnimeNewsDetailController {
+
   public async getAnimeNewsDetails(req: Request, res: Response) {
     const { id } = req.query;
-    const response: TgetNewsDetails = await getNewsDetails(getNewsPreview, id);
+    const response: NewDetailsType = await Anime.getNewsDetails(<string>id);
     return res.status(200).json(response);
   }
 };
