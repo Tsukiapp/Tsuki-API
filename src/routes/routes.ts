@@ -1,16 +1,13 @@
 import { Router } from 'express';
-import { getAnime } from '../controllers/getAnime.controller.js';
-import { getAnimeNewsPreview } from '../controllers/getAnimeNewsPreview.controller.js';
-import { getAnimeNewsDetails } from '../controllers/getAnimeNewsDetails.controller.js';
-import { getSeason } from '../controllers/getSeasonalAnime.controller.js'
-import { getTopAnimes } from '../controllers/getTopAnime.controller.js';
+import APIController from '../controllers/Controller.js';
 
 const router: Router = Router();
+const Controller = new APIController();
 
-router.get('/search', await getAnime.getAnime);
-router.get('/news', await getAnimeNewsPreview.getAnimeNewsPreview);
-router.get('/news/details', await getAnimeNewsDetails.getAnimeNewsDetails);
-router.get('/season', await getSeason.getSeasonalInfo);
-router.get('/top', await getTopAnimes.getTopAnime);
+router.get('/search', await Controller.getAnime );
+router.get('/news', await Controller.getAnimeNewsPreview );
+router.get('/news/details', await Controller.getAnimeNewsDetails);
+router.get('/season', await Controller.getSeasonalInfo);
+router.get('/top', await Controller.getTopAnime );
 
 export default router;
