@@ -12,6 +12,7 @@
   "author": "Spaghetti <alejandrolpz0619@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^4.1.2",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "tsukiapp-mal-scrapper": "^2.1.5"
