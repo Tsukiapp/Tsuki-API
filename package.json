@@ -14,7 +14,7 @@
   "dependencies": {
     "chalk": "^4.1.2",
     "cors": "^2.8.5",
-    "express": "^4.17.1",
+    "express": "^4.17.2",
     "tsukiapp-mal-scrapper": "^2.1.5"
   },
   "module": "system",
